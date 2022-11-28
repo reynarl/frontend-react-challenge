@@ -1,6 +1,41 @@
 .calculator{
   .container{
     padding-top: 100px;
-    
+  }
+
+  h2{
+    color: $color-gray-900;
+  }
+
+  &-description{
+    color: $color-gray-500;
+    line-height: 30px;
+  }
+
+  &__btn-clear{
+    border: 2px solid $color-orange;
+    border-radius: 5px;
+    color: $color-gray-800;
+    background-color: white;
+    padding: 18px 43px;
+    width: 100%;
+  }
+
+  &__sumatory{
+    background-color: $color-bg-white;
+    padding: 35px 15px 0;
+    ul{
+      padding: 0;
+      li{
+        list-style: none;
+        padding-bottom: 22px;
+      }
+      :nth-child(5){
+        font-weight: 700;
+      }
+      :nth-child(6){
+        font-weight: 700;
+      }
+    }
   }
 }

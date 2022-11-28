@@ -6,13 +6,13 @@ const Navbar = () => {
   return (
     <nav className='container-fluid'>
       <div className='container d-flex justify-content-between align-items-center'>
-        <img className='home-icon' src={HOME_ICON} alt='Icono de inicio' />
+        <img className='home-icon' src={HOME_ICON} alt='home icon' />
         <div className='navbar__menu-hamburguer'>
           <img
             className='navbar__menu-hamburguer-icon'
             onClick={() => setIsClick(true)}
             src='../../public/icon-bars.svg'
-            alt='barra de menú'
+            alt='menu icon'
           />
           <ul className={isClick ? 'navbar__menu-hamburguer-options active' : 'navbar__menu-hamburguer-options d-none'}>
             <li className='navbar__menu-hamburguer-close'>

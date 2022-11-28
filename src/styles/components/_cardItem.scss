@@ -1,0 +1,36 @@
+.card-item{
+  // border: 1px solid blueviolet;
+  &__figure{
+    background-color: white;
+    // box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
+    // margin-bottom: 20px;
+    img{
+      padding: 20px 0 10px;
+    }
+    p{
+      font-size: 17px;
+      font-weight: 300;
+      color: $color-gray-800;
+    }
+  }
+
+  &__input{
+    margin-bottom: 40px;
+    button{
+      padding: 14px 14px;
+      background-color: #E2E2E2;
+      font-size: 18px;
+      font-weight: 300;
+      border-radius: 5px 0px 0px 5px;
+    }
+    input{
+      border: 1px solid #E2E2E2;
+      font-size: 17px;
+      padding: 14px;
+      width: 100%;
+    }
+    :nth-child(3){
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
+}
