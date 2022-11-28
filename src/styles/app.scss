@@ -3,3 +3,12 @@
 @import './components/navbar';
 @import './components/storageCalculator';
 @import './components/footer';
+
+*{
+  margin: 0;
+  border: 0;
+}
+
+body{
+  font-family: $font-poppins;
+}
