@@ -3,7 +3,10 @@ footer{
   color: white;
   padding: 50px 0;
   margin-top: 100px;
-  // padding: 130px 0 144px 0;
+  @include responsive($large){
+    padding: 130px 0 144px 0;
+    margin-top: 200px;
+  }
 
   ul{
     padding: 0;
