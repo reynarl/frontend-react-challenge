@@ -76,10 +76,10 @@ const StorageCalculator = () => {
 
   return (
     <section className='container-fluid calculator'>
-      <div className='container'>
+      <div className='container text-md-center text-lg-start'>
         <h2 className='text-center'>What items to store?</h2>
         <p className='calculator-description py-2 text-center'>Select which items you wish to store before moving to <span className='d-sm-block'>your new home. We’ll keep ’em safe!</span></p>
-        <div className='row'>
+        <div className='row d-lg-flex flex-lg-wrap '>
           {
             items.map(item => (
               <CardItem
@@ -94,7 +94,7 @@ const StorageCalculator = () => {
         <button className='calculator__btn-clear' onClick={handleClearAllItems}>Clear</button>
 
         <h2 className='text-center py-4'>Summary</h2>
-        <div className='calculator__sumatory d-flex justify-content-around'>
+        <div className='mx-md-auto calculator__sumatory d-flex justify-content-around'>
           <ul>
             <li>Total Items</li>
             <li>Total M2</li>

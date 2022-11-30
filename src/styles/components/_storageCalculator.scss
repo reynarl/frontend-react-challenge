@@ -1,6 +1,9 @@
 .calculator{
   .container{
     padding-top: 100px;
+    @include responsive($large){
+      padding-top: 181px;
+    }
   }
 
   h2{
@@ -10,6 +13,9 @@
   &-description{
     color: $color-gray-500;
     line-height: 30px;
+    @include responsive($large){
+      margin-bottom: 125px;
+    }
   }
 
   &__btn-clear{
@@ -19,11 +25,26 @@
     background-color: white;
     padding: 18px 43px;
     width: 100%;
+    @include responsive($medium){
+      width: 50%;
+      margin-bottom: 41px;
+    }
+    @include responsive($medium){
+      width: 17%;
+      margin-bottom: 41px;
+    }
   }
 
   &__sumatory{
     background-color: $color-bg-white;
     padding: 35px 15px 0;
+    @include responsive($medium){
+      text-align: left;
+      width: 416px;
+    }
+    @include responsive($large){
+      margin-top: 30px;
+    }
     ul{
       padding: 0;
       li{
