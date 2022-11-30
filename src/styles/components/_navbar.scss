@@ -9,6 +9,22 @@ nav{
     height: 50px;
   }
 
+  .navbar__menu{
+    margin: 10px 0;
+    padding-top: 20px;
+    li{
+      a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+          color: #ffe0cd;
+        }
+      }
+      list-style: none;
+      margin-right: 65px;
+    }
+  }
+
   .navbar__menu-hamburguer{
     position: relative;
     &-options{

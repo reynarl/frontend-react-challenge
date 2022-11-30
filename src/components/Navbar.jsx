@@ -7,7 +7,15 @@ const Navbar = () => {
     <nav className='container-fluid'>
       <div className='container d-flex justify-content-between align-items-center'>
         <img className='home-icon' src={HOME_ICON} alt='home icon' />
-        <div className='navbar__menu-hamburguer'>
+        <div className='navbar__menu d-none d-lg-block'>
+          <ul className='d-flex'>
+            <li><a href='#'>How We Work</a></li>
+            <li><a href='#'>Services</a></li>
+            <li><a href='#'>Free Quote</a></li>
+            <li><a href='#'>Contact</a></li>
+          </ul>
+        </div>
+        <div className='navbar__menu-hamburguer d-lg-none'>
           <img
             className='navbar__menu-hamburguer-icon'
             onClick={() => setIsClick(true)}
