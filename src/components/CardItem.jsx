@@ -1,10 +1,10 @@
 
-const CardItem = ({ id, title, name, handleAddItem, handleRemoveItem, amount = 0 }) => {
+const CardItem = ({ id, title, name, image, handleAddItem, handleRemoveItem, amount = 0 }) => {
   return (
     <div className='card-item col-12 col-md-3'>
       <div className='card-item__figure text-center'>
         <div>
-          <div className='image-items'><img src={`../../public/icon-${name}.svg`} alt={title} /></div>
+          <div className='image-items'><img src={image} alt={title} /></div>
           <p>{title}</p>
         </div>
       </div>

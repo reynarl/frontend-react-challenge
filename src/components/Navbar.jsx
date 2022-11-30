@@ -1,5 +1,7 @@
 import { useState } from 'react'
+
 import HOME_ICON from '../assets/cil_house.svg'
+import MENU_ICON from '../assets/icon-bars.svg'
 
 const Navbar = () => {
   const [isClick, setIsClick] = useState(false)
@@ -19,7 +21,7 @@ const Navbar = () => {
           <img
             className='navbar__menu-hamburguer-icon'
             onClick={() => setIsClick(true)}
-            src='../../public/icon-bars.svg'
+            src={MENU_ICON}
             alt='menu icon'
           />
           <ul className={isClick ? 'navbar__menu-hamburguer-options active' : 'navbar__menu-hamburguer-options d-none'}>
