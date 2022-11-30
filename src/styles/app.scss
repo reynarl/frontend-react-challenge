@@ -2,6 +2,7 @@
 
 @import './components/navbar';
 @import './components/storageCalculator';
+@import './components/cardItem';
 @import './components/footer';
 
 *{
@@ -11,4 +12,5 @@
 
 body{
   font-family: $font-poppins;
+  // background-color: $color-bg-white;
 }

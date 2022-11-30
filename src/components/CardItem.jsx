@@ -1,13 +1,16 @@
-import React from 'react'
 
-const CardItem = ({ src, alt }) => {
+const CardItem = ({ id, title, name, handleAddItem, handleRemoveItem, amount = 0 }) => {
   return (
-    <div>
-      <img className='' src={src} alt={alt} />
-      <p>Beds</p>
-      <button>-</button>
-      <input type='number' placeholder='0' />
-      <button>+</button>
+    <div className='card-item col-md-2'>
+      <div className='card-item__figure text-center'>
+        <img src={`../../public/icon-${name}.svg`} alt={title} />
+        <p>{title}</p>
+      </div>
+      <div className='card-item__input d-flex'>
+        <button onClick={() => handleRemoveItem(id)}>-</button>
+        <p className='text-center card-item__input-box'>{amount}</p>
+        <button onClick={() => handleAddItem(id)}>+</button>
+      </div>
     </div>
   )
 }
